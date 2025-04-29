@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    position: sticky;
+    top: 0; 
+  
+    .container {
+      width: 100%; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      padding: 20px 40px;
+      border-radius: 10px;
+      background: rgba(var(--accent-color), 0.1);
+      backdrop-filter: blur(10px);
+  
+      .left-side {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: fit-content;
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+  
+        .logoImg {
+          width: 40px;
+          height: auto;
+        }
+  
+        .logoText {
+          font-family: LogoFont, sans-serif;
+          text-transform: uppercase;
+        }
+      }
+  
+      .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        font-weight: 500;
+      }
+  
+      .searchbar {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+      
+        input {
+          width: 100%;
+          padding: 10px 15px 10px 40px;
+          font-size: 14px;
+          background-color: white;
+          border: 1px solid rgba(var(--gray-color), 0.50);
+          border-radius: 200px;
+      
+          &:focus {
+            outline: none;
+            border: 1px solid rgba(var(--gray-color), 1);
+          }
+        }
+      
+        .search-icon {
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          stroke: rgba(var(--gray-color), 0.50);
+          width: 18px;
+          height: 18px;
+          pointer-events: none;
+          transition: stroke 0.3s ease;
+        }
+      
+        &:focus-within {
+          .search-icon {
+            stroke: rgba(var(--gray-color), 1);
+          }
+        }
+      }
+      
+  
+      .right-side {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        width: fit-content;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+  
+          &:hover {
+            stroke: rgba(var(--primary-color));
+          }
+        }
+      }
+    }
+  }
+  
