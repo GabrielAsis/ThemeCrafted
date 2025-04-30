@@ -119,4 +119,4 @@ Use the `.link` class to style anchor tags with consistent behavior:
 
 - SCSS is required for all styling.
 - Use `!important` if your styles are not applying as expected.
-- Feel free to create additional utility classes or extend the existing ones in your components.
+- Feel free to create additional utility classes in index.css file or extend the existing ones in your components.
