@@ -107,11 +107,11 @@ Use the `.link` class to style anchor tags with consistent behavior:
 <Link to="/" class="link">Read more</Link>
 ```
 
-Make sure to also use Link from react-router-dom 
-
 - Inherits text color.
 - Removes underline.
 - Adds hover fade effect.
+
+⚠️ Use <Link> from react-router-dom instead of <a> tags for internal navigation to ensure client-side routing works properly.
 
 ---
 
