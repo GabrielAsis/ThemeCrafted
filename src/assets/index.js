@@ -15,6 +15,7 @@ import circle from "../assets/Circle Drawing.svg";
 import zigzag from "../assets/Zig Zag Drawing.svg";
 import blob1 from "../assets/Blob 1.svg";
 import blob2 from "../assets/Blob 2.svg";
+import swirlyArrow from "../assets/Swirly Arrow Drawing.svg";
 
 
 // categories
@@ -29,9 +30,15 @@ import restaurantSvg from "../assets/categories/Restaurant Icon.svg";
 import techImg from "../assets/categories/Tech.png";
 import techSvg from "../assets/categories/Tech Startup Icon.svg";
 
+// why choose us assets
+import codingSvg from "../assets/Coding Icon.svg";
+import creatingSvg from "../assets/Creating Icon.svg";
+import customizationSvg from "../assets/Customization Icon.svg";
 
 // misc
 import noise from "../assets/noise.png";
+
+
 
 export {
   logo,
@@ -56,4 +63,8 @@ export {
   blob1,
   blob2,
   noise,
+  codingSvg,
+  creatingSvg,
+  customizationSvg,
+  swirlyArrow,
 }

@@ -9,6 +9,9 @@ import {
   restaurantSvg,
   techImg,
   techSvg,
+  codingSvg,
+  creatingSvg,
+  customizationSvg,
 } from "./assets"
 
 export const categories = [
@@ -52,4 +55,25 @@ export const categories = [
     svg: techSvg,
   }
 
+]
+
+export const whyChooseUs = [
+  {
+    id: 1,
+    title: "Crafted by Experts",
+    desc: "Built with precision and care by industry professionals.",
+    svg: codingSvg,
+  },
+  {
+    id: 2,
+    title: "Curated Quality",
+    desc: "Only the best, high-performance themes in the market.",
+    svg: creatingSvg,
+  },
+  {
+    id: 3,
+    title: "Easy Customization",
+    desc: "User-friendly & drag-and-drop templates for easy custmization.",
+    svg: customizationSvg,
+  }
 ]
