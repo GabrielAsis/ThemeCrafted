@@ -17,8 +17,8 @@
       gap: 50px;
       padding: 20px 40px;
       border-radius: 10px;
-      background: rgba(var(--accent-color), 0.1);
-      backdrop-filter: blur(2px);
+      background-color: rgba(var(--accent-color), 0.20);
+      backdrop-filter: blur(10px);
   
       .left-side {
         display: flex;

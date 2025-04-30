@@ -5,6 +5,8 @@ import { ArrowRight } from 'lucide-react';
 // image imports
 import { heroImage, star, underline, circle } from "../../assets"
 
+import Slider from 'infinite-react-carousel';
+
 
 const Hero = () => {
   return (
@@ -14,9 +16,9 @@ const Hero = () => {
         <div className="hero-container">
           <div className="left-side">
             <div className='title'>
-              <h1>Crafted Themes for Visionary Creators</h1>
-              <img src={underline} className='line'/>
-              <img src={star} className='star'/>
+            <h1>
+              Crafted <span className="themes-word">Themes<img src={star} className="star" /></span> for <span className="underline-target"><span className='text'>Visionary Creators</span><img src={underline} className="line" /></span>
+            </h1>
             </div>
             <p>Discover beautifully designed, high-performance website themes and templates for every niche—handpicked to help you build better, faster.</p>
             <button className='primary-btn'>Browse Themes <ArrowRight /></button>

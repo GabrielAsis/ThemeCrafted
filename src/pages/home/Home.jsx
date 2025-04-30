@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.scss"
-import Hero from '../../components/hero/Hero'
+import Hero from '../../components/hero section/Hero'
 
 const Home = () => {
   return (
