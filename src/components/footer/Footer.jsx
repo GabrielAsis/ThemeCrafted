@@ -19,14 +19,14 @@ const Footer = () => {
 
         <div className="links">
           <div className="pages">
-            <p>Pages</p>
+            <h4>Pages</h4>
             <Link className='link' to="/">Home</Link>
             <Link className='link' to="/">Collections</Link>
             <Link className='link' to="/">Discover</Link>
           </div>
 
           <div className="resources">
-            <p>Resources</p>
+            <h4>Resources</h4>
             <Link className='link' to="/">Documentation</Link>
             <Link className='link' to="/">Prototype</Link>
             <Link className='link' to="/">Github Repository</Link>

@@ -12,6 +12,10 @@ import heroImage from "../assets/Hero Image.png";
 import star from "../assets/Star Drawing.svg";
 import underline from "../assets/Underline Drawing.svg";
 import circle from "../assets/Circle Drawing.svg";
+import zigzag from "../assets/Zig Zag Drawing.svg";
+import blob1 from "../assets/Blob 1.svg";
+import blob2 from "../assets/Blob 2.svg";
+
 
 // categories
 import ecommerceImg from "../assets/categories/Ecommerce.png";
@@ -26,6 +30,8 @@ import techImg from "../assets/categories/Tech.png";
 import techSvg from "../assets/categories/Tech Startup Icon.svg";
 
 
+// misc
+import noise from "../assets/noise.png";
 
 export {
   logo,
@@ -46,4 +52,8 @@ export {
   restaurantSvg,
   techImg,
   techSvg,
+  zigzag,
+  blob1,
+  blob2,
+  noise,
 }
