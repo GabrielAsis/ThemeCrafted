@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+
+  .grid-bg {
+    position: relative; // changed from absolute
+    width: 100%;        // full width
+    height: 100%;       // will now grow with content
+    z-index: 0;
+    background-size: 70px 70px;
+    background-image: linear-gradient(to right, #e4e4e7 1px, transparent 1px),
+                      linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+  }
+
+  .dark & .grid-bg {
+    background-image: linear-gradient(to right, #262626 1px, transparent 1px),
+                      linear-gradient(to bottom, #262626 1px, transparent 1px);
+  }
+
+  .grid-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    mask-image: radial-gradient(ellipse at center 0%, transparent 0%, black);
+  }
+
+  .dark & .grid-overlay {
+    background-color: black;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 12rem 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .left-side {  
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 30px;
+      flex: 2;
+
+      .title {
+        position: relative;
+        h1 {
+          font-size: 4rem !important;
+          z-index: 2;
+          position: relative;
+  
+          @media (max-width: 1025px) {
+            font-size: 3rem !important;
+          }
+  
+          @media (max-width: 768px) {
+            font-size: 2.5rem !important;
+          }
+        }
+
+        .line {
+          position: absolute;
+          bottom: 0px;
+        }
+
+        .star {
+          position: absolute;
+          top: 0px;
+          right: 6.5rem;
+          transform: rotate(-25deg);
+          width: 25px;
+          height: auto;
+        }
+      }
+
+      p {
+        font-size: 1.25rem !important;
+      }
+
+      button {
+        width: fit-content;
+      }
+    }
+
+    .right-side {
+      flex: 2;
+
+      .container {
+        position: relative;
+
+        .hero-img {
+          z-index: 2;
+          position: relative;
+        }
+
+        .circle-drawing {
+          z-index: 1;
+          position: absolute;
+          top: -8%;
+          left: 50%;
+          transform: translateX(-50%);
+          min-width: 105% !important;
+        }
+      }
+    }    
+  }
+}
