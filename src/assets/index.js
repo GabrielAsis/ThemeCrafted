@@ -7,6 +7,7 @@ import theme3 from "../assets/themes/Sample Theme 3.webp";
 
 // images
 import heroImage from "../assets/Hero Image.png";
+import deviceMockup from "../assets/Device Mockup.png";
 
 // drawing svgs
 import star from "../assets/Star Drawing.svg";
@@ -16,6 +17,7 @@ import zigzag from "../assets/Zig Zag Drawing.svg";
 import blob1 from "../assets/Blob 1.svg";
 import blob2 from "../assets/Blob 2.svg";
 import swirlyArrow from "../assets/Swirly Arrow Drawing.svg";
+import spiral from "../assets/Spiral Drawing.svg";
 
 
 // categories
@@ -37,7 +39,8 @@ import customizationSvg from "../assets/Customization Icon.svg";
 
 // misc
 import noise from "../assets/noise.png";
-
+import light from "../assets/Lights.png";
+import particles from "../assets/Particles.png"
 
 
 export {
@@ -67,4 +70,8 @@ export {
   creatingSvg,
   customizationSvg,
   swirlyArrow,
+  deviceMockup,
+  spiral,
+  light,
+  particles,
 }

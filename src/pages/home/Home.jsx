@@ -5,6 +5,7 @@ import "./Home.scss"
 import Hero from '../../components/hero section/Hero'
 import Categories from '../../components/categories section/Categories'
 import Benifits from '../../components/benifits section/Benifits'
+import CTA from '../../components/cta section/CTA'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <Benifits />
+      <CTA />
     </div>
   )
 }
