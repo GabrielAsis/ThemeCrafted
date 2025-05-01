@@ -1,9 +1,8 @@
 import logo from "../assets/ThemeCrafted Logo.svg";
 
 // theme images
-import theme1 from "../assets/themes/sample Theme 1.png";
-import theme2 from "../assets/themes/Sample Theme 2.webp";
-import theme3 from "../assets/themes/Sample Theme 3.webp";
+import sampleTheme from "../assets/themes/Sample Theme.webp"
+import sampleThemePhone from "../assets/themes/Sample Theme Phone.png"
 
 // images
 import heroImage from "../assets/Hero Image.png";
@@ -12,13 +11,15 @@ import deviceMockup from "../assets/Device Mockup.png";
 // drawing svgs
 import star from "../assets/Star Drawing.svg";
 import underline from "../assets/Underline Drawing.svg";
+import underline2 from "../assets/Underline Drawing 2.svg"
 import circle from "../assets/Circle Drawing.svg";
 import zigzag from "../assets/Zig Zag Drawing.svg";
 import blob1 from "../assets/Blob 1.svg";
 import blob2 from "../assets/Blob 2.svg";
 import swirlyArrow from "../assets/Swirly Arrow Drawing.svg";
 import spiral from "../assets/Spiral Drawing.svg";
-
+import newDrawing from "../assets/New Drawing.svg";
+import pop from "../assets/Pop Drawing.svg"
 
 // categories
 import ecommerceImg from "../assets/categories/Ecommerce.png";
@@ -41,13 +42,11 @@ import customizationSvg from "../assets/Customization Icon.svg";
 import noise from "../assets/noise.png";
 import light from "../assets/Lights.png";
 import particles from "../assets/Particles.png"
-
+import phoneFrame from "../assets/Phone Frame.svg";
+import grid from "../assets/Grid.png"
 
 export {
   logo,
-  theme1,
-  theme2,
-  theme3,
   heroImage,
   star,
   underline,
@@ -74,4 +73,11 @@ export {
   spiral,
   light,
   particles,
+  sampleTheme,
+  sampleThemePhone,
+  newDrawing,
+  phoneFrame,
+  grid,
+  underline2,
+  pop,
 }

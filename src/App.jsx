@@ -15,6 +15,7 @@ import Gigs from "./pages/Gigs/Gigs"
 import MyGigs from "./pages/myGigs/MyGigs"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
+import Collections from "./pages/collections/Collections"
 
 
 import {
@@ -79,6 +80,10 @@ function App() {
         {
           path:"/add",
           element: <Add/>
+        },
+        {
+          path:"/collections",
+          element: <Collections/>
         },
       ]
     }

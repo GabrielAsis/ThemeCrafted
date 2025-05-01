@@ -12,6 +12,8 @@ import {
   codingSvg,
   creatingSvg,
   customizationSvg,
+  sampleTheme,
+  sampleThemePhone,
 } from "./assets"
 
 export const categories = [
@@ -75,5 +77,117 @@ export const whyChooseUs = [
     title: "Easy Customization",
     desc: "User-friendly & drag-and-drop templates for easy custmization.",
     svg: customizationSvg,
+  }
+]
+
+export const themes = [
+  {
+    id: 1,
+    title: "Minimalist Portfolio",
+    excerpt: "Clean, modern design tailored for creatives and freelancers.",
+    desc: "Minimalist Portfolio is perfect for designers, photographers, and artists looking to showcase their work in an elegant and distraction-free layout. Optimized for speed and simplicity.",
+    price: 25,
+    category: "Portfolio",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+  {
+    id: 2,
+    title: "Boldfolio",
+    excerpt: "A bold and colorful portfolio theme to stand out.",
+    desc: "Boldfolio features vibrant visuals, animated transitions, and dynamic grid layouts, making it perfect for creatives who want to leave a lasting impression with their personal brand or client work.",
+    price: 20,
+    discount: 15,
+    category: "Portfolio",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+
+  // Restaurant
+  {
+    id: 3,
+    title: "Bistro Delight",
+    excerpt: "A cozy and elegant theme designed for cafes and bistros.",
+    desc: "Bistro Delight offers a warm and inviting aesthetic with menu sections, reservation forms, and gallery features tailored for restaurants, coffee shops, and casual dining spots.",
+    price: 30,
+    category: "Restaurant",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+  {
+    id: 4,
+    title: "Gourmet Pro",
+    excerpt: "Modern layout built for upscale restaurants and chefs.",
+    desc: "Gourmet Pro provides a premium look with full-screen sliders, a sleek menu display, and online reservation integration—ideal for fine dining establishments and culinary professionals.",
+    price: 35,
+    category: "Restaurant",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+
+  // Booking
+  {
+    id: 5,
+    title: "Bookify",
+    excerpt: "A powerful booking theme for salons, clinics, and more.",
+    desc: "Bookify offers seamless appointment scheduling, service listings, and calendar integrations—perfect for any business that requires client bookings and time-slot management.",
+    price: 28,
+    category: "Booking",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+  {
+    id: 6,
+    title: "StayEase",
+    excerpt: "An elegant booking theme for hotels and vacation rentals.",
+    desc: "StayEase features dynamic room showcases, availability calendars, and multi-language support—making it the ideal choice for hospitality businesses and travel accommodations.",
+    price: 32,
+    category: "Booking",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+
+  // Tech Startup
+  {
+    id: 7,
+    title: "LaunchHub",
+    excerpt: "A startup-friendly theme for product launches and SaaS.",
+    desc: "LaunchHub is clean, responsive, and conversion-focused, equipped with pricing tables, feature highlights, and call-to-action sections that help tech startups effectively pitch their solutions.",
+    price: 29,
+    category: "Tech Startup",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+  {
+    id: 8,
+    title: "Innovexa",
+    excerpt: "High-tech aesthetic built for innovation-driven companies.",
+    desc: "Innovexa delivers a futuristic design with animations, integration-ready blocks, and smooth scrolling. Best suited for tech startups, app developers, and forward-thinking businesses.",
+    price: 34,
+    category: "Tech Startup",
+    img: sampleTheme,
+    phoneImg: sampleThemePhone
+  },
+
+  // E-commerce
+  {
+    id: 9,
+    title: "ShopNest",
+    excerpt: "Flexible theme for fashion, lifestyle, and general e-commerce.",
+    desc: "ShopNest provides a stylish storefront with product filters, cart integration, and promotional banners. Optimized for WooCommerce and great for any niche store.",
+    price: 27,
+    category: "Ecommerce",
+    img: sampleTheme,
+    phoneImg: ""
+  },
+  {
+    id: 10,
+    title: "ElectroMart",
+    excerpt: "Designed for electronics and gadget stores.",
+    desc: "ElectroMart includes a powerful product grid, comparison tools, and user reviews—making it the perfect fit for online stores focused on tech gadgets, home appliances, and more.",
+    price: 31,
+    category: "Ecommerce",
+    img: sampleTheme,
+    phoneImg: ""
   }
 ]
