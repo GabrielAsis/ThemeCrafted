@@ -7,6 +7,10 @@ import sampleThemePhone from "../assets/themes/Sample Theme Phone.png"
 // images
 import heroImage from "../assets/Hero Image.png";
 import deviceMockup from "../assets/Device Mockup.png";
+import slide1 from "../assets/Slide 1.png"
+import slide2 from "../assets/Slide 2.png"
+import slide3 from "../assets/Slide 3.png"
+import slide4 from "../assets/Slide 4.png"
 
 // drawing svgs
 import star from "../assets/Star Drawing.svg";
@@ -80,4 +84,8 @@ export {
   grid,
   underline2,
   pop,
+  slide1,
+  slide2,
+  slide3,
+  slide4
 }

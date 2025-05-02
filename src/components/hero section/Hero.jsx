@@ -5,9 +5,6 @@ import { ArrowRight } from 'lucide-react';
 // image imports
 import { heroImage, star, underline, circle } from "../../assets"
 
-import Slider from 'infinite-react-carousel';
-
-
 const Hero = () => {
   return (
     <div className="hero">

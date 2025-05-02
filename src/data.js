@@ -14,7 +14,17 @@ import {
   customizationSvg,
   sampleTheme,
   sampleThemePhone,
+  // slide1,
+  // slide2,
+  // slide3,
+  // slide4,
 } from "./assets"
+
+import slide1 from "./assets/Slide 1.png"
+import slide2 from "./assets/Slide 2.png"
+import slide3 from "./assets/Slide 3.png"
+import slide4 from "./assets/Slide 4.png"
+
 
 export const categories = [
   {
@@ -190,4 +200,27 @@ export const themes = [
     img: sampleTheme,
     phoneImg: ""
   }
+]
+
+export const heroSlides = [
+  {
+    id: 1,
+    title: "Launch your business faster with powerful, modern tools",
+    img: slide1,
+  },
+  {
+    id: 2,
+    title: "Build your site with high-performance features, speed, & optimization",
+    img: slide2,
+  },
+  {
+    id: 3,
+    title: "Design with confidence using intuitive, professional tools",
+    img: slide3,
+  },
+  {
+    id: 4,
+    title: "Choose from expertly crafted themes tailored for your brand",
+    img: slide4,
+  },
 ]

@@ -12,7 +12,7 @@ const NewestThemes = () => {
       <div className="container">
         <div className="header">
           <div className="title-desc">
-              <h1>Newest Themes</h1>
+              <h2>Newest Themes</h2>
               <p>Stand out with crafted themes that feel fresh, unique, and built to convert.</p>
           </div>
 
