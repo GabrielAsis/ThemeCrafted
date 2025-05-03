@@ -17,6 +17,7 @@ import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import Collections from "./pages/collections/Collections"
 
+import { ToastContainer } from "react-toastify"
 
 import {
   createBrowserRouter,
@@ -92,6 +93,7 @@ function App() {
   return (
     <div>
       <RouterProvider router={router}/>
+      <ToastContainer></ToastContainer>
     </div>
   )
 }

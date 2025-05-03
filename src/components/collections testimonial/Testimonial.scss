@@ -6,6 +6,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 1025px) {
+    padding: 60px 0px;
+  }
+
   .container {
     width: 100%;
     display: flex;
