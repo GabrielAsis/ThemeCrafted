@@ -1,3 +1,4 @@
+import { User } from "lucide-react"
 import { 
   ecommerceImg,
   ecommerceSvg,
@@ -13,6 +14,10 @@ import {
   creatingSvg,
   customizationSvg,
   sampleTheme,
+  sampleTheme2,
+  sampleTheme3,
+  sampleTheme4,
+  sampleTheme5,
   sampleThemePhone,
   // slide1,
   // slide2,
@@ -226,5 +231,49 @@ export const heroSlides = [
 ]
 
 export const testimonials = [
-  
+  {
+    id: 1,
+    themTitle: "Minimalist Portfolio",
+    themePrice: 25,
+    img: sampleTheme,
+    quote: "As a freelance designer, this theme gave my portfolio a clean and professional edge—clients started taking me more seriously!",
+    user: "John Doe",
+    date: "Bought 10 months ago"
+  },
+  {
+    id: 2,
+    themTitle: "Bookify",
+    themePrice: 28,
+    img: sampleTheme2,
+    quote: "Bookify completely transformed how we handle appointments. Clients love the seamless experience!",
+    user: "Sophia Reyes",
+    date: "Bought 3 months ago"
+  },
+  {
+    id: 3,
+    themTitle: "Gourmet Pro",
+    themePrice: 35,
+    img: sampleTheme3,
+    quote: "Our restaurant’s website finally matches our high-end branding—reservations have doubled!",
+    user: "Chef Marco Silva",
+    date: "Bought 6 months ago"
+  },
+  {
+    id: 4,
+    themTitle: "LaunchHub",
+    themePrice: 29,
+    img: sampleTheme4,
+    quote: "As a startup founder, I couldn’t ask for a better launch page. Sleek, responsive, and easy to customize.",
+    user: "Aisha Khan",
+    date: "Bought 2 months ago"
+  },
+  {
+    id: 5,
+    themTitle: "ShopNest",
+    themePrice: 27,
+    img: sampleTheme5,
+    quote: "Setting up our clothing store was a breeze with ShopNest—it's stylish and super functional.",
+    user: "Liam Tan",
+    date: "Bought 5 months ago"
+  }
 ]

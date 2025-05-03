@@ -2,6 +2,10 @@ import logo from "../assets/ThemeCrafted Logo.svg";
 
 // theme images
 import sampleTheme from "../assets/themes/Sample Theme.webp"
+import sampleTheme2 from "../assets/themes/Sample Themes 2.webp"
+import sampleTheme3 from "../assets/themes/Sample Themes 3.webp"
+import sampleTheme4 from "../assets/themes/Sample Themes 4.webp"
+import sampleTheme5 from "../assets/themes/Sample Themes 5.webp"
 import sampleThemePhone from "../assets/themes/Sample Theme Phone.png"
 
 // images
@@ -11,6 +15,7 @@ import slide1 from "../assets/Slide 1.png"
 import slide2 from "../assets/Slide 2.png"
 import slide3 from "../assets/Slide 3.png"
 import slide4 from "../assets/Slide 4.png"
+import sampleProfile from "../assets/Sample Profile.png"
 
 // drawing svgs
 import star from "../assets/Star Drawing.svg";
@@ -49,6 +54,9 @@ import particles from "../assets/Particles.png"
 import phoneFrame from "../assets/Phone Frame.svg";
 import grid from "../assets/Grid.png"
 
+// icons 
+import quote from "../assets/Quote icon.svg"
+
 export {
   logo,
   heroImage,
@@ -78,6 +86,10 @@ export {
   light,
   particles,
   sampleTheme,
+  sampleTheme2,
+  sampleTheme3,
+  sampleTheme4,
+  sampleTheme5,
   sampleThemePhone,
   newDrawing,
   phoneFrame,
@@ -87,5 +99,7 @@ export {
   slide1,
   slide2,
   slide3,
-  slide4
+  slide4,
+  sampleProfile,
+  quote,
 }
