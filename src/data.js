@@ -224,3 +224,7 @@ export const heroSlides = [
     img: slide4,
   },
 ]
+
+export const testimonials = [
+  
+]

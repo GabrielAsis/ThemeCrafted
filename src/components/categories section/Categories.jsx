@@ -32,7 +32,7 @@ const Categories = () => {
                 <h3>{category.title}</h3>
                 <p>{category.desc}</p>
               </div>
-              <div className="media">
+              <div className="media"> 
                 <div className='category-svg' >
                   <img src={category.svg} alt={category.title}/>
                 </div>
