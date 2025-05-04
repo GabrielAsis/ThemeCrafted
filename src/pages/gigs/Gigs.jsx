@@ -22,10 +22,12 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr &gt; Graphics & Design &gt;</span>
-        <h1>AI Artists</h1>
+        <span className="breadcrumbs">Liverr &gt; All Themes &gt;</span>
+        <h1>Discover All Themes</h1>
         <p>
-          Explore the boundaries of art and technology with Fiverr's AI artists
+          Explore expertly crafted theme collections tailored to industries,
+          styles, and goals — all handpicked to help you design with purpose and
+          launch with confidence.
         </p>
         <div className="menu">
           <div className="left">
