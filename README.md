@@ -1,4 +1,3 @@
-
 # Project Styles Guide
 
 This project uses **SCSS** for styling. Since the tutorial is based on SCSS, we'll maintain consistency by using it throughout the codebase.
@@ -35,13 +34,13 @@ Default styles for text elements have been predefined, including responsive scal
 
 ### Heading Styles
 
-| Element | Font             | Example Use       |
-|---------|------------------|-------------------|
-| `h1`    | Hanken Grotesk   | Page titles       |
-| `h2`    | Hanken Grotesk   | Section headers   |
-| `h3`    | Hanken Grotesk   | Sub-sections      |
-| `h4`    | Hanken Grotesk   | Smaller headings  |
-| `p`     | Instrumentsans   | Paragraph text    |
+| Element | Font           | Example Use      |
+| ------- | -------------- | ---------------- |
+| `h1`    | Hanken Grotesk | Page titles      |
+| `h2`    | Hanken Grotesk | Section headers  |
+| `h3`    | Hanken Grotesk | Sub-sections     |
+| `h4`    | Hanken Grotesk | Smaller headings |
+| `p`     | Instrumentsans | Paragraph text   |
 
 Font sizes automatically adjust at screen widths below 1025px and 768px for better responsiveness.
 
@@ -80,7 +79,7 @@ The following button styles are included:
 ### ✅ Primary Button
 
 ```html
-<button class="primary-btn">Click Me</button>
+<button className="primary-btn">Click Me</button>
 ```
 
 - Uses the primary color for background and border.
@@ -89,7 +88,7 @@ The following button styles are included:
 ### 🔲 Outline Button
 
 ```html
-<button class="outline-btn">Click Me</button>
+<button className="outline-btn">Click Me</button>
 ```
 
 - Transparent background.
@@ -101,10 +100,10 @@ Both button types include padding, flex alignment, transition effects, and respo
 
 ## 🔗 Links
 
-Use the `.link` class to style anchor tags with consistent behavior:
+Use the `.link` className to style anchor tags with consistent behavior:
 
 ```html
-<Link to="/" class="link">Read more</Link>
+<Link to="/" className="link">Read more</Link>
 ```
 
 - Inherits text color.
