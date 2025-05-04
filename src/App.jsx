@@ -17,6 +17,8 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Collections from "./pages/collections/Collections";
 
+import { ToastContainer } from "react-toastify";
+
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 function App() {
@@ -86,6 +88,7 @@ function App() {
   return (
     <div>
       <RouterProvider router={router} />
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
