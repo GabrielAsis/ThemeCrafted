@@ -6,11 +6,6 @@ import { Search, ShoppingCart, CircleUserRound, X, Menu } from "lucide-react";
 
 import { Link, useLocation } from 'react-router-dom';
 
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { auth, db } from '../firebase';
-import { setDoc, doc } from "firebase/firestore";
-import { toast } from 'react-toastify';
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -53,42 +48,23 @@ const Navbar = () => {
 
   const handleRegister = async (e)=> {
     e.preventDefault();
-    try {
-     await createUserWithEmailAndPassword(auth, signupEmail, signupPassword);
-     const user = auth.currentUser;
-     console.log(user);
-     if(user) {
-      await setDoc(doc(db, "Users", user.uid), {
-        email: user.email,
-        username: signupUsername
-      })
-     }
-     console.log("User is Registered Sucessfully!!")
-     toast.success("Account Registered Successfully. Welcome!", {
-      position: "bottom-right"
-     })
-    } catch (error) {
-      console.log(error.message);
-      toast.error(error.message, {
-        position: "bottom-right"
-       })
-    }
+    // Frontend only - no Firebase implementation
+    console.log("Register clicked with:", {
+      username: signupUsername,
+      email: signupEmail,
+      password: signupPassword
+    });
+    // You can add UI feedback here later
   };
 
   const handleLogin = async (e)=> {
     e.preventDefault();
-    try {
-      await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-      console.log("User logged in succesfully!")
-      toast.success("Account Logged In Successfully. Welcome Back!", {
-        position: "bottom-right"
-       })
-    } catch (error) {
-      console.log(error.message)
-      toast.error(error.message, {
-        position: "bottom-right"
-       })
-    }
+    // Frontend only - no Firebase implementation
+    console.log("Login clicked with:", {
+      email: loginEmail,
+      password: loginPassword
+    });
+    // You can add UI feedback here later
   }
 
   // Toggle mobile menu and prevent body scrolling when menu is open
@@ -114,7 +90,7 @@ const Navbar = () => {
             {/* DESKTOP NAV LINKS */}
             <div className="links desktop-only">
                 <Link className="link" to="/collections">Collections</Link>
-                <Link className="link" to="/">Discover</Link>
+                <Link className="link" to="/gigs">Discover</Link>
             </div>
           </div>
 
@@ -133,9 +109,9 @@ const Navbar = () => {
           <div className='right-side desktop-only'>
             <ShoppingCart />
 
-            {<button className='outline-btn' onClick={() => setShowLogin(true)}>Log In</button>}
-            {<button className='primary-btn' onClick={() => setShowSignup(true)}>Sign Up</button>}
-            {!currentUser && (
+            {!currentUser && <button className='outline-btn' onClick={() => setShowLogin(true)}>Log In</button>}
+            {!currentUser && <button className='primary-btn' onClick={() => setShowSignup(true)}>Sign Up</button>}
+            {currentUser && (
               <div className="user" onClick={()=>setOpen(!open)}>
                 <CircleUserRound className="user-avatar"/>
                 <span>{currentUser?.username}</span>
@@ -164,6 +140,12 @@ const Navbar = () => {
             <Search className="search-icon"/>
             <input type="text" placeholder="Search" />
           </div>
+          {currentUser && (
+            <div className="mobile-profile">
+              <CircleUserRound />
+              <span>Account</span>
+            </div>
+          )} 
           
           {/* MOBILE NAV LINKS */}
           <div className="mobile-links">
@@ -186,19 +168,22 @@ const Navbar = () => {
             <ShoppingCart />
             <span>Cart</span>
           </div>
+
           
           {/* MOBILE AUTH BUTTONS */}
-          <div className="mobile-auth-buttons">
-            <button className='outline-btn' onClick={() => {
-              setShowLogin(true);
-              setMobileMenuOpen(false);
-            }}>Log In</button>
-            
-            <button className='primary-btn' onClick={() => {
-              setShowSignup(true);
-              setMobileMenuOpen(false);
-            }}>Sign Up</button>
-          </div>
+          {!currentUser && (
+            <div className="mobile-auth-buttons">
+              <button className='outline-btn' onClick={() => {
+                setShowLogin(true);
+                setMobileMenuOpen(false);
+              }}>Log In</button>
+              
+              <button className='primary-btn' onClick={() => {
+                setShowSignup(true);
+                setMobileMenuOpen(false);
+              }}>Sign Up</button>
+            </div>
+          )} 
         </div>
       </div>
 
@@ -329,8 +314,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
-
     </>
   )
 }

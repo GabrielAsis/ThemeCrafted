@@ -3,7 +3,7 @@ import "./Gig.scss";
 
 import { sampleTheme, sampleProfile, sampleThemePhone } from "../../assets";
 
-import { Star, Download, Layers, MessageSquareMore } from "lucide-react";
+import { Star, Download, Layers, MessageCircleMore } from "lucide-react";
 
 import { themes } from "../../data";
 import { Link } from "react-router-dom";
@@ -112,7 +112,7 @@ const Gig = () => {
                   <h3>John Doe</h3>
                   <p>Joined 12 months ago</p>
                   <button className="outline-btn">
-                    <MessageSquareMore /> Contact Me
+                    <MessageCircleMore /> Contact Me
                   </button>
                 </div>
               </div>
