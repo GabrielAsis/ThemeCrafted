@@ -1,5 +1,5 @@
-import { User } from "lucide-react"
-import { 
+import { User } from "lucide-react";
+import {
   ecommerceImg,
   ecommerceSvg,
   bookingImg,
@@ -23,13 +23,12 @@ import {
   // slide2,
   // slide3,
   // slide4,
-} from "./assets"
+} from "./assets";
 
-import slide1 from "./assets/Slide 1.png"
-import slide2 from "./assets/Slide 2.png"
-import slide3 from "./assets/Slide 3.png"
-import slide4 from "./assets/Slide 4.png"
-
+import slide1 from "./assets/Slide 1.png";
+import slide2 from "./assets/Slide 2.png";
+import slide3 from "./assets/Slide 3.png";
+import slide4 from "./assets/Slide 4.png";
 
 export const categories = [
   {
@@ -70,9 +69,8 @@ export const categories = [
     desc: "Launch your next big idea with modern, bold designs.",
     img: techImg,
     svg: techSvg,
-  }
-
-]
+  },
+];
 
 export const whyChooseUs = [
   {
@@ -92,8 +90,8 @@ export const whyChooseUs = [
     title: "Easy Customization",
     desc: "User-friendly & drag-and-drop templates for easy custmization.",
     svg: customizationSvg,
-  }
-]
+  },
+];
 
 export const themes = [
   {
@@ -104,7 +102,7 @@ export const themes = [
     price: 25,
     category: "Portfolio",
     img: sampleTheme,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
   {
     id: 2,
@@ -115,7 +113,7 @@ export const themes = [
     discount: 15,
     category: "Portfolio",
     img: sampleTheme2,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
 
   // Restaurant
@@ -127,7 +125,7 @@ export const themes = [
     price: 30,
     category: "Restaurant",
     img: sampleTheme3,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
   {
     id: 4,
@@ -137,7 +135,7 @@ export const themes = [
     price: 35,
     category: "Restaurant",
     img: sampleTheme4,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
 
   // Booking
@@ -149,7 +147,7 @@ export const themes = [
     price: 28,
     category: "Booking",
     img: sampleTheme5,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
   {
     id: 6,
@@ -159,7 +157,7 @@ export const themes = [
     price: 32,
     category: "Booking",
     img: sampleTheme,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
 
   // Tech Startup
@@ -171,7 +169,7 @@ export const themes = [
     price: 29,
     category: "Tech Startup",
     img: sampleTheme,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
   {
     id: 8,
@@ -181,7 +179,7 @@ export const themes = [
     price: 34,
     category: "Tech Startup",
     img: sampleTheme,
-    phoneImg: sampleThemePhone
+    phoneImg: sampleThemePhone,
   },
 
   // E-commerce
@@ -193,7 +191,7 @@ export const themes = [
     price: 27,
     category: "Ecommerce",
     img: sampleTheme,
-    phoneImg: ""
+    phoneImg: "",
   },
   {
     id: 10,
@@ -203,9 +201,9 @@ export const themes = [
     price: 31,
     category: "Ecommerce",
     img: sampleTheme,
-    phoneImg: ""
-  }
-]
+    phoneImg: "",
+  },
+];
 
 export const heroSlides = [
   {
@@ -215,7 +213,8 @@ export const heroSlides = [
   },
   {
     id: 2,
-    title: "Build your site with high-performance features, speed, & optimization",
+    title:
+      "Build your site with high-performance features, speed, & optimization",
     img: slide2,
   },
   {
@@ -228,7 +227,7 @@ export const heroSlides = [
     title: "Choose from expertly crafted themes tailored for your brand",
     img: slide4,
   },
-]
+];
 
 export const testimonials = [
   {
@@ -236,44 +235,49 @@ export const testimonials = [
     themTitle: "Minimalist Portfolio",
     themePrice: 25,
     img: sampleTheme,
-    quote: "As a freelance designer, this theme gave my portfolio a clean and professional edge—clients started taking me more seriously!",
+    quote:
+      "As a freelance designer, this theme gave my portfolio a clean and professional edge—clients started taking me more seriously!",
     user: "John Doe",
-    date: "Bought 10 months ago"
+    date: "Bought 10 months ago",
   },
   {
     id: 2,
     themTitle: "Bookify",
     themePrice: 28,
     img: sampleTheme2,
-    quote: "Bookify completely transformed how we handle appointments. Clients love the seamless experience!",
+    quote:
+      "Bookify completely transformed how we handle appointments. Clients love the seamless experience!",
     user: "Sophia Reyes",
-    date: "Bought 3 months ago"
+    date: "Bought 3 months ago",
   },
   {
     id: 3,
     themTitle: "Gourmet Pro",
     themePrice: 35,
     img: sampleTheme3,
-    quote: "Our restaurant’s website finally matches our high-end branding—reservations have doubled!",
+    quote:
+      "Our restaurant’s website finally matches our high-end branding—reservations have doubled!",
     user: "Chef Marco Silva",
-    date: "Bought 6 months ago"
+    date: "Bought 6 months ago",
   },
   {
     id: 4,
     themTitle: "LaunchHub",
     themePrice: 29,
     img: sampleTheme4,
-    quote: "As a startup founder, I couldn’t ask for a better launch page. Sleek, responsive, and easy to customize.",
+    quote:
+      "As a startup founder, I couldn’t ask for a better launch page. Sleek, responsive, and easy to customize.",
     user: "Aisha Khan",
-    date: "Bought 2 months ago"
+    date: "Bought 2 months ago",
   },
   {
     id: 5,
     themTitle: "ShopNest",
     themePrice: 27,
     img: sampleTheme5,
-    quote: "Setting up our clothing store was a breeze with ShopNest—it's stylish and super functional.",
+    quote:
+      "Setting up our clothing store was a breeze with ShopNest—it's stylish and super functional.",
     user: "Liam Tan",
-    date: "Bought 5 months ago"
-  }
-]
+    date: "Bought 5 months ago",
+  },
+];

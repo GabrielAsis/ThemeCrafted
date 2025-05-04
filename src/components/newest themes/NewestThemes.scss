@@ -54,9 +54,8 @@
         flex-direction: column;
         gap: 20px;
         text-decoration: none !important;
-        
 
-        .preview{
+        .preview {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -80,26 +79,26 @@
             bottom: -30%;
             right: 12px;
           }
-          
         }
 
-        .details{
+        .details {
           display: flex;
           flex-direction: column;
           justify-content: start;
           align-items: start;
           gap: 8px;
-          .title{}
-          .excerpt{}
-          .price{
+          .title {
+          }
+          .excerpt {
+          }
+          .price {
             font-weight: 500;
             color: rgba(var(--black-color));
-            .original{
+            .original {
               color: rgba(var(--gray-color), 50%);
               text-decoration: line-through !important;
             }
-            .discount{
-              
+            .discount {
             }
           }
         }

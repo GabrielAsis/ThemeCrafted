@@ -1,0 +1,54 @@
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: none !important;
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .desktop {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: center 0%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .phone {
+      width: 100px;
+      z-index: 2;
+      position: absolute;
+      bottom: -30%;
+      right: 12px;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+    .title {
+    }
+    .excerpt {
+    }
+    .price {
+      font-weight: 500;
+      color: rgba(var(--black-color));
+      .original {
+        color: rgba(var(--gray-color), 50%);
+        text-decoration: line-through !important;
+      }
+      .discount {
+      }
+    }
+  }
+}
