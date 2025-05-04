@@ -1,0 +1,163 @@
+.my-gigs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 0px 120px 0px;
+  position: relative;
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    padding: 0 16px;
+    position: relative;
+    gap: 30px;
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0px 15px;
+
+      td {
+        padding: 25px;
+      }
+
+      td:not(:last-child) {
+        padding-right: 0px !important;
+      }
+
+      th {
+        padding: 10px 25px;
+      }
+
+      // IMAGE
+      td:nth-child(1),
+      th:nth-child(1) {
+        width: 15%;
+      }
+
+      // DETAILS
+      td:nth-child(2),
+      th:nth-child(2) {
+        width: 25%;
+      }
+
+      // PRICE
+      td:nth-child(3),
+      th:nth-child(3) {
+        width: 15%;
+      }
+
+      // SALES
+      td:nth-child(4),
+      th:nth-child(4) {
+        width: 15%;
+      }
+
+      // ACTION
+      td:nth-child(5),
+      th:nth-child(5) {
+        width: 30%;
+      }
+
+
+    
+      tr:not(:first-child) {
+        outline: 1px solid rgba(var(--gray-color), 0.5);
+        border-radius: 10px;
+        padding: 30px;
+    
+        &:nth-child(even) {
+          background-color: rgba(var(--off-white-color));
+        }
+    
+        td {
+          .img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center 0%;
+            aspect-ratio: 16/10;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px; 
+            display: flex;
+            align-items: center; 
+          }
+
+          .details {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            p {
+              font-size: 1rem !important;
+            }
+
+            .view {
+              font-size: 1rem !important;
+              color: rgba(var(--gray-color)) !important;
+              display: flex;
+              align-items: center;
+              &:hover {
+                color: rgba(var(--gray-color), 0.8) !important;
+                svg {
+                  stroke: rgba(var(--gray-color), 0.8) !important;
+                }
+              }
+              svg {
+                height: 1.2rem;
+                stroke: rgba(var(--gray-color)) !important;;
+              }
+            }
+          }
+
+          .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+          }
+    
+          .delete {
+            background-color: rgba(218, 54,51);
+            border-color: rgba(218, 54,51);
+            color: white; 
+            font-size: 1rem !important;
+            padding: 10px;
+
+            svg {
+              stroke: white;
+              height: 1.2rem;
+            }
+
+            &:hover{
+              background-color: rgba(218, 54, 51, 0.75) ;
+            }
+          }
+
+          .edit {
+            font-size: 1rem !important;
+            padding: 10px;  
+
+            svg {
+              height: 1.2rem;
+            }
+          }
+        }
+      }
+    
+      th {
+        text-align: left;
+      }
+    }
+    
+  }
+}
